@@ -7,18 +7,22 @@ int main ()
 	puts("Enter your cardname: ");
 	scanf("%2s", card_name);
 	int val = 0;
-	if (card_name[0] == 'K') {
+	switch (card_name[0]){
+	case 'K':
+	case 'Q':
+	case 'J':
 		val = 10;
-	} else if (card_name[0] == 'Q') {
-		val = 10;
-	} else if (card_name[0] == 'A') {
+	break;
+	case 'A':
 		val = 11;
-	} else {
-		val = atoi (card_name);
-	}
-	if (val > 2 ) & (val < 7)
-		puts ("count has gone up");
-	else if (val == 10);
-		puts ("count has gone down");
+	break;
+	default:
+	val = atoi(card_name);
+	}	
+	if ( (val > 2) && (val < 7))
+	puts ("count has gone up");
+	
+	else if (val == 10)
+	puts ("count has gone down");
 	return 0;
 }
