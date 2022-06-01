@@ -9,5 +9,8 @@ int main ()
 	contestant[1] = contestant[2];
 	contestant[2] = *choise; 
 	printf ("im going to pick the contestant number %i \n", contestant[2]);
+	printf ("o valor exibido com %%p é %p \n", *choise);
+	printf ("o valor exibido com %%i é %i \n", *choise);
+	printf ("o valor exibido de contestant com %%p é %p \n", contestant);
 	return 0;
 }
