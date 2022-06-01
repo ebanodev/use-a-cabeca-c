@@ -1,0 +1,2 @@
+PONTEIROS:
+Quando é atribuido uma unidade de array ao ponteiro, o mesmo passa a carregar o seu endereço dentro do array (que é relativo ao endereço do array na memóri) e por sua vez o valor do array também.
